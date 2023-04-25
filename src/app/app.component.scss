@@ -1,0 +1,18 @@
+.main-layout {
+    display: flex;
+    box-sizing: border-box;
+    padding: 24px;
+    column-gap: 24px;
+}
+
+app-side-bar {
+    flex-basis: 20%;
+}
+
+.content {
+    flex-basis: 55%;
+}
+
+app-side-panel {
+    flex-basis: 25%;
+}

@@ -1,0 +1,20 @@
+{
+	"HEADER": {
+		"CONTACT": "Kontakt",
+		"HOME": "Strona Glowna",
+		"REAL": "Realna Gra",
+		"SHOP": "Sklep",
+		"STATISTICS": "Statystyki",
+		"VIRTUAL": "Wirtualna Gra",
+        "REGISTER": "Rejestracja",
+		"LOGIN": "Zaloguj sie"
+	},
+	"LEAGUE": {
+		"ENGLISH_PREMIER_LEAGUE": "1. Anglia",
+		"SERIE_A": "1. Wlochy",
+		"BUNDESLIGA": "1. Niemiecka"
+	},
+	"REAL": {
+		"CHOICE_YOUR_BET": "Wybierz swoje zaklady"
+	}
+}

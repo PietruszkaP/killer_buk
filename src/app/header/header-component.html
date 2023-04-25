@@ -1,0 +1,15 @@
+<div class="header">
+    <div class="header__logo">
+        <span class="header__title">KILLER-BUK</span>
+        <span class="material-symbols-outlined">
+            currency_exchange
+            </span>
+    </div>
+
+    <app-drop-down-menu [selectedOption]="options[0]" [options]="options"></app-drop-down-menu>
+    <div>
+        <app-button (click)="register()" [text]="'HEADER.REGISTER'" [mode]="buttonMode.PRIMARY"></app-button>
+        <app-button (click)="login()" [text]="'HEADER.LOGIN'"></app-button>
+    </div>
+</div>
+

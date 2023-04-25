@@ -1,0 +1,10 @@
+<div class="side-bar">
+    <h2 class="side-bar__title">{{'Top 20 gamblers'}}</h2>
+    <div class="side-bar__gamblers">
+        <div class="side-bar__gambler" *ngFor="let gambler of gamblers; let i = index">
+            <span class="side-bar__id">{{'#' + (i + 1)}}</span>
+            <span class="side-bar__nick">{{gambler.nick}}</span>
+            <span class="side-bar__score" [ngClass]="{'positive': gambler.score > 0}">{{gambler.score}}</span>
+        </div>
+    </div>
+</div>

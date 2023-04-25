@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <div class="headling">
+        <img class="flag" [src]="iconSrc">
+        <span>{{ leagueName | translate}}</span>
+    </div>
+    <div *ngFor="let game of games" class="game">
+        <div class="team">
+            <span class="home-win">{{game.homeWinOdds}}</span>
+           <span>{{ game.homeTeam }}</span>
+        </div>
+        <div class="draw">{{game.drawOdds}}</div>
+        <div class="team">
+            <span class="away-name">{{game.awayTeam}}</span>
+            <span class="away-win">{{game.homeWinOdds}}</span>
+        </div>
+    </div>
+</div>

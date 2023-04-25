@@ -1,0 +1,33 @@
+
+.input {
+    width: 500px;
+    margin: 8px;
+    padding: 8px 8px;
+    border-radius: 4px;
+    border: 1px solid rgb(118, 118, 118);
+    color: white;
+    height: 48px;
+    box-sizing: border-box;
+    background-color: #343434;
+
+    input {
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        position: relative;
+        top: 8px;
+    }
+
+    &.with-icon {
+        padding-left: 48px;
+        position: relative; 
+    }
+}
+
+.material-symbols-outlined {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 48px;
+    padding: 0 12px;
+}

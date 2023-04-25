@@ -1,0 +1,28 @@
+
+.slider_wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.slider_bar{
+    width: 100%;
+    background-color: red;
+    height: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slider_progress{
+  position: absolute;
+  height: 5px;
+  top:0%;
+  width: 100%;
+  background-color: #fc0;
+  }
+  
+  img {
+    max-height: 400px;
+  }

@@ -1,0 +1,7 @@
+
+<div class="input" [ngClass]="{'with-icon': iconName?.length}">
+    <input [placeholder]="placeholder" [value]="value">
+    <span class="material-symbols-outlined" *ngIf="iconName">
+        {{iconName}}
+        </span>
+</div>

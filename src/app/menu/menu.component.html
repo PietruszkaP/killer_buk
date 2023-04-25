@@ -1,0 +1,50 @@
+<div class="menu">
+    <a class="menu__item" [routerLink]="'/home'" [routerLinkActive]="'active'">
+        <span class="material-symbols-outlined">
+            home
+            </span>
+        <span>{{'HEADER.HOME' | translate}}</span>
+        </a>
+    <a class="menu__item" [routerLink]="'/virtual'" [routerLinkActive]="'active'">
+        <span class="material-symbols-outlined">
+            stadia_controller
+            </span>
+        <span>{{'HEADER.VIRTUAL' | translate}}</span>
+        </a>
+    <a class="menu__item" routerLink="/real" [routerLinkActive]="'active'">
+        <span class="material-symbols-outlined">
+            sound_sampler
+            </span>
+            <span>{{'HEADER.REAL' | translate}}</span>
+        </a>
+    <a class="menu__item" [routerLink]="'/statistics'" [routerLinkActive]="'active'">
+        <span class="material-symbols-outlined">
+            <span class="material-symbols-outlined">
+                bar_chart_4_bars
+                </span>
+            </span>
+            <span>{{'HEADER.STATISTICS' | translate}}</span>
+        </a>
+    <a class="menu__item" [routerLink]="'/shop'" [routerLinkActive]="'active'">
+            <span class="material-symbols-outlined">
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span>
+                </span>
+                <span>{{'HEADER.SHOP' | translate}}</span>
+        </a>    
+    <a class="menu__item" [routerLink]="'/contact'" [routerLinkActive]="'active'">
+        <span class="material-symbols-outlined">
+            sensor_occupied
+            </span>
+            <span>{{'HEADER.CONTACT' | translate}}</span>
+        </a>
+</div>
+<div class="main-menu">
+    <!-- <router-outlet name="'menu'"></router-outlet> -->
+    <!-- <div class="main-menu__item">Featured</div>
+    <div class="main-menu__item">Competitions</div>
+    <div class="main-menu__item">Coupons</div>
+    <div class="main-menu__item">Calendar</div>
+    <div class="main-menu__item">Teams</div> -->
+</div>

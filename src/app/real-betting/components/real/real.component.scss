@@ -1,0 +1,13 @@
+.real-content {
+    height: calc(83vh - 48px);
+    color: white;
+    background-color: #121212;
+    border-radius: 8px;
+    overflow: scroll;
+    padding: 8px 0;
+    box-sizing: border-box;
+
+    .heading {
+        text-align: center;
+    }
+}

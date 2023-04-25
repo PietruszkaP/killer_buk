@@ -1,0 +1,53 @@
+.dropdown {
+    position: relative;
+    color: white;
+
+    &__selectedOption {
+        display: flex;
+        cursor: pointer;
+    }
+
+    ul {
+        text-align: center;
+        position: absolute;
+        background-color: #484848;
+        padding: 0;
+        list-style-type: none;
+        box-shadow: 0 0 23 0 rgba(0,0,0,0.25);
+        margin-top: 10px;
+        border-radius: 4px;
+
+    }
+
+    a {
+        width: 100%;
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        padding: 0 8px;
+        margin: 0;
+    }
+
+    .flag {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+
+    .material-symbols-outlined {
+        &:selected {
+            background-color: red;
+        }
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #27283F;
+            border-radius: 4px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<!-- <div>
+    <button (click)="openDropdown()">Open Dropdown</button>
+</div> -->
+
+<div class="dropdown" (clickOutside)="clickedOutside()">
+    <div class="dropdown__selectedOption" (click)="openDropdown()">
+        <img class="flag" [src]="selectedOption!.src">
+        <a>{{ selectedOption!.name | translate}}</a>
+        <span class="material-symbols-outlined" (click)="$event.stopPropagation">
+            expand_more
+        </span>
+    </div>
+   <ul *ngIf="isDropdownOpen">
+    <li *ngFor="let option of options" (click)="setLanguage(option.value)">
+        <img class="flag" [src]="option.src">
+        <a>{{option.name}}</a>
+    </li>
+   </ul>
+</div>

@@ -1,0 +1,8 @@
+<button class="button" 
+[ngClass]="{
+    'primary' : mode === buttonMode.PRIMARY, 
+    'default': mode === buttonMode.DEFAULT, 
+    'warm': mode === buttonMode.WARM, 
+}">
+    {{ text | translate }}
+</button>

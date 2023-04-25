@@ -1,0 +1,21 @@
+
+.core-panel {
+    background-color: #242424;
+    height: calc(83vh - 48px);
+    overflow: scroll;
+}
+
+.core-panel__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.core-panel__square {
+    flex-basis: 48%;
+    margin-top: 24px;
+    background-color: #141414;
+    height: 300px;
+    color: white;
+    border-radius: 8px;
+}

@@ -1,0 +1,25 @@
+.header {
+    background-color: black;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 4px 24px;
+
+    &__logo {
+        display: flex;
+        color: rgb(189, 49, 49);
+        flex-grow: 1;
+    }
+
+    app-drop-down-menu {
+        margin-right: 18px;
+    }
+
+    &__title {
+        margin-right: 8px;
+        height: 30px;
+        font-family: 'Rubik Wet Paint', cursive;
+        letter-spacing: 2px;
+    }
+}

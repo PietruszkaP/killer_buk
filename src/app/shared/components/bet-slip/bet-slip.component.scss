@@ -1,0 +1,27 @@
+.bet-slip {
+    height: 25vh;
+    background-color: rgb(189, 49, 49);
+    position: fixed;
+    border-radius: 4px 0 0 4px;
+    top: 20vh;
+    right: 0;
+
+    .material-symbols-outlined {
+        border-radius: 4px 0 0 4px;
+        height: 100%;
+        width: 3vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+          color: white;
+        }
+    }
+
+    &.expand {
+        width: 25vw;
+        justify-content: flex-start;
+    }
+}

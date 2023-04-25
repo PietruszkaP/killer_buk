@@ -1,0 +1,41 @@
+.side-bar {
+    color: white;
+    box-sizing: border-box;
+    max-width: 320px;
+    background-color: #141414;
+    border-radius: 8px;
+    overflow: scroll;
+    height: calc(83vh - 48px);
+    padding: 10px 15px;
+
+    &__title {
+        text-align: center;
+  }
+
+  &__gambler {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4px 0;
+    cursor: pointer;
+  }
+
+  &__id {
+    margin-right: 10px;
+    width: 30px;
+    }
+
+    &__nick {
+        margin: 0 10px;
+        margin-right: auto;
+        display: inline-block;
+    }
+
+    &__score {
+        color: red;
+
+        &.positive {
+            color: green;
+        }
+    }
+
+}

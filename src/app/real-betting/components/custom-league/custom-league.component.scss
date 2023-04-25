@@ -1,0 +1,61 @@
+
+.wrapper {
+    padding: 4px 40px;
+    margin-bottom: 20px;
+
+
+    .headling {
+        display: flex;
+        align-items: center;
+    
+        .flag {
+            width: 24px;
+            height: 24px;
+            margin-right: 16px;
+        }
+    }
+
+    .game {
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        margin: 4px 0;
+        color: #aaa;
+        background: #181818;
+    
+        .team {
+            display: flex;
+            justify-content: start;
+            padding: 4px 24px 4px 0;
+            flex-basis: 50%;
+            border-radius: 4px;
+    
+            .away-name {
+                padding-left: 48px;
+            }
+    
+            &:hover {
+                background: #333;
+                cursor: pointer;
+            }
+    
+            .home-win {
+                margin-right: 48px;
+            }
+    
+            .away-win {
+                margin-left: auto;
+            }
+        }
+    
+        .draw {
+            padding: 4px 24px;
+            border-radius: 4px;
+    
+            &:hover  {
+                cursor: pointer;
+                background: #333;
+            }
+        }
+    }
+}

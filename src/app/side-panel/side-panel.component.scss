@@ -1,0 +1,19 @@
+.side-panel {
+    height: calc(83vh - 48px);
+    color: white;
+    border-radius: 8px;
+    overflow: scroll;
+
+    &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    }
+}
+
+.block {
+    background-color: #121212;
+    height: 300px;
+    min-width: 100%;
+    border-radius: 8px;
+}

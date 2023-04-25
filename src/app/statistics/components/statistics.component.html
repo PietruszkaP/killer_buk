@@ -1,0 +1,13 @@
+
+<div>
+    Statistics
+    <button (click)="navigate()">Clcik Me</button>
+    <a class="menu__item" [routerLink]="'/statistics/dupa'" [routerLinkActive]="'statistics/dupa'">
+        <span class="material-symbols-outlined">
+            stadia_controller
+            </span>
+        <span>{{'HEADER.VIRTUAL' | translate}}</span>
+        </a>
+    <router-outlet name="test"></router-outlet>
+
+</div>

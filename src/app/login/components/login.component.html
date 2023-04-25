@@ -1,0 +1,7 @@
+<form [formGroup]="loginForm">
+<div class="login">
+    <app-input class="login__name" [value]="loginForm.controls.name.value" [iconName]="'person'" [placeholder]="'Email or User Id'" formControlName= 'name'></app-input>
+    <app-input class="login__password" [value]="loginForm.controls.password.value"  [iconName]="'lock'" [placeholder]="'Password'" formControlName="password"></app-input>
+    <app-button [text]="'Login'" [mode]="buttonMode.WARM"></app-button>
+</div>
+</form>

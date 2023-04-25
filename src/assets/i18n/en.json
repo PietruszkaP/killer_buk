@@ -1,0 +1,20 @@
+{
+	"HEADER": {
+		"CONTACT": "Contact",
+		"HOME": "Home",
+		"REAL": "Real",
+		"SHOP": "Shop",
+		"STATISTICS": "Statistics",
+		"VIRTUAL": "Virtual",
+		"REGISTER": "Register",
+		"LOGIN": "Login"
+	},
+	"LEAGUE": {
+		"ENGLISH_PREMIER_LEAGUE": "English Premier League",
+		"SERIE_A": "Serie A",
+		"BUNDESLIGA": "Bundesliga"
+	},
+	"REAL": {
+		"CHOICE_YOUR_BET": "Choice your bet"
+	}
+}
