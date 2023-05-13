@@ -9,16 +9,16 @@ import { Game } from "src/app/shared/modules/game.model";
 export class RealComponent {
 
     premierLeague: Game[] = [
-        {homeTeam: 'Arsenal', drawOdds: 3.2, awayTeam: 'Southampton', homeWinOdds: 1.2, awayWinOdds: 7.4},
-        {homeTeam: 'Fulham', drawOdds: 3.2, awayTeam: 'Leeds United', homeWinOdds: 1.2, awayWinOdds: 7.4},
-        {homeTeam: 'Brentford', drawOdds: 3.2, awayTeam: 'Aston VIlla', homeWinOdds: 1.2, awayWinOdds: 7.4},
-        {homeTeam: 'Crystal Palace', drawOdds: 3.2, awayTeam: 'Everton', homeWinOdds: 1.2, awayWinOdds: 7.4},
-        {homeTeam: 'Leicester City', drawOdds: 3.2, awayTeam: 'Wolverhampton', homeWinOdds: 1.2, awayWinOdds: 7.4},
-        {homeTeam: 'Liverpool', drawOdds: 3.2, awayTeam: 'Nottingham Forest', homeWinOdds: 1.2, awayWinOdds: 7.4},
-        {homeTeam: 'Manchester United', drawOdds: 3.2, awayTeam: 'Chelsea', homeWinOdds: 1.2, awayWinOdds: 7.4},
-        {homeTeam: 'AFC Bournemouth', drawOdds: 3.2, awayTeam: 'West Ham United', homeWinOdds: 1.2, awayWinOdds: 7.4},
-        {homeTeam: 'Newcastle United', drawOdds: 3.2, awayTeam: 'Tottenham Hotspour', homeWinOdds: 1.2, awayWinOdds: 7.4},
-        {homeTeam: 'Brighton', drawOdds: 3.2, awayTeam: 'Manchester City', homeWinOdds: 1.2, awayWinOdds: 7.4},
+        {homeTeam: 'Arsenal', drawOdds: 7, awayTeam: 'Southampton', homeWinOdds: 1.2, awayWinOdds: 12.4},
+        {homeTeam: 'Fulham', drawOdds: 3.2, awayTeam: 'Leeds United', homeWinOdds: 2.4, awayWinOdds: 3.4},
+        {homeTeam: 'Brentford', drawOdds: 3.3, awayTeam: 'Aston VIlla', homeWinOdds: 2.35, awayWinOdds: 3.4},
+        {homeTeam: 'Crystal Palace', drawOdds: 3.9, awayTeam: 'Everton', homeWinOdds: 2.2, awayWinOdds: 2.8},
+        {homeTeam: 'Leicester City', drawOdds: 3.2, awayTeam: 'Wolverhampton', homeWinOdds: 2.2, awayWinOdds: 2.4},
+        {homeTeam: 'Liverpool', drawOdds: 4.3, awayTeam: 'Nottingham Forest', homeWinOdds: 1.3, awayWinOdds: 7.4},
+        {homeTeam: 'Manchester United', drawOdds: 3.85, awayTeam: 'Chelsea', homeWinOdds: 1.85, awayWinOdds: 4.4},
+        {homeTeam: 'AFC Bournemouth', drawOdds: 3.5, awayTeam: 'West Ham United', homeWinOdds: 2.2, awayWinOdds: 1.9},
+        {homeTeam: 'Newcastle United', drawOdds: 3.2, awayTeam: 'Tottenham Hotspour', homeWinOdds: 3.2, awayWinOdds: 2.35},
+        {homeTeam: 'Brighton', drawOdds: 3.2, awayTeam: 'Manchester City', homeWinOdds: 4.2, awayWinOdds: 1.4},
     ]
 
     serieA: Game[] = [

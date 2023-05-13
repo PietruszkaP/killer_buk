@@ -4,12 +4,12 @@
         <span>{{ leagueName | translate}}</span>
     </div>
     <div *ngFor="let game of games" class="game">
-        <div class="team">
+        <div class="team" (click)="toggleToBetSlip(game, game.homeWinOdds)">
             <span class="home-win">{{game.homeWinOdds}}</span>
            <span>{{ game.homeTeam }}</span>
         </div>
-        <div class="draw">{{game.drawOdds}}</div>
-        <div class="team">
+        <div class="draw" (click)="toggleToBetSlip(game, game.drawOdds)">{{game.drawOdds}}</div>
+        <div class="team" (click)="toggleToBetSlip(game, game.awayWinOdds)">
             <span class="away-name">{{game.awayTeam}}</span>
             <span class="away-win">{{game.homeWinOdds}}</span>
         </div>

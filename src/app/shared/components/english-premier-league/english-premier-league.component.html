@@ -1,0 +1,77 @@
+<div>
+  <span style="text-align: center">{{'English Premier League' | translate}}</span>
+<!--  <div class="container">-->
+<!--    <span>#</span>-->
+<!--    <span class="team_column">Team</span>-->
+<!--    <span>P</span>-->
+<!--    <span>W</span>-->
+<!--    <span>D</span>-->
+<!--    <span>L</span>-->
+<!--    <span>F</span>-->
+<!--    <span>A</span>-->
+<!--    <span>GD</span>-->
+<!--    <span>PTS</span>-->
+<!--  </div>-->
+
+  <table cdk-table [dataSource]="dataSource">
+    <!-- Position Column -->
+    <ng-container cdkColumnDef="position">
+      <th cdk-header-cell *cdkHeaderCellDef> # </th>
+      <td cdk-cell *cdkCellDef="let element"> {{element.position}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container cdkColumnDef="team">
+      <th cdk-header-cell *cdkHeaderCellDef class="team"> Team </th>
+      <td cdk-cell *cdkCellDef="let element">
+        <img class="language__flag" [src]="element.src">
+        {{element.team}}
+      </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container cdkColumnDef="played">
+      <th cdk-header-cell *cdkHeaderCellDef> P </th>
+      <td cdk-cell *cdkCellDef="let element"> {{element.played}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container cdkColumnDef="wins">
+      <th cdk-header-cell *cdkHeaderCellDef> W </th>
+      <td cdk-cell *cdkCellDef="let element"> {{element.wins}} </td>
+    </ng-container>
+
+    <ng-container cdkColumnDef="draws">
+      <th cdk-header-cell *cdkHeaderCellDef> D </th>
+      <td cdk-cell *cdkCellDef="let element"> {{element.draws}} </td>
+    </ng-container>
+
+    <ng-container cdkColumnDef="losses">
+      <th cdk-header-cell *cdkHeaderCellDef> L </th>
+      <td cdk-cell *cdkCellDef="let element"> {{element.losses}} </td>
+    </ng-container>
+
+    <ng-container cdkColumnDef="goalsFor">
+      <th cdk-header-cell *cdkHeaderCellDef> F </th>
+      <td cdk-cell *cdkCellDef="let element"> {{element.goalsFor}} </td>
+    </ng-container>
+
+    <ng-container cdkColumnDef="goalsAgainst">
+      <th cdk-header-cell *cdkHeaderCellDef> A </th>
+      <td cdk-cell *cdkCellDef="let element"> {{element.goalsAgainst}} </td>
+    </ng-container>
+
+    <ng-container cdkColumnDef="goalsDifference">
+      <th cdk-header-cell *cdkHeaderCellDef> GD </th>
+      <td cdk-cell *cdkCellDef="let element"> {{element.goalsDifference}} </td>
+    </ng-container>
+
+    <ng-container cdkColumnDef="points">
+      <th cdk-header-cell *cdkHeaderCellDef> PTS </th>
+      <td cdk-cell *cdkCellDef="let element"> {{element.points}} </td>
+    </ng-container>
+
+    <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
+    <tr cdk-row *cdkRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>

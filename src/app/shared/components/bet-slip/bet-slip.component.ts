@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import {Bet, RealBettingService} from "../../../real-betting/services/real-betting.service";
 
 @Component({
     selector: 'app-bet-slip',
@@ -7,8 +8,10 @@ import { Component } from "@angular/core";
 })
 export class BetSlipComponent {
     isBetSlipExpanded = false;
+    betSlip: Bet[] = []
 
-    constructor() {
+    constructor(private _realBettingService: RealBettingService) {
+      this.betSlip = _realBettingService.getBetSlip;
     }
 
     toggleBetSlip(): void {

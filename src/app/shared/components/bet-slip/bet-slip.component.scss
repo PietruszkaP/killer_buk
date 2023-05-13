@@ -23,5 +23,17 @@
     &.expand {
         width: 25vw;
         justify-content: flex-start;
+        display: flex;
+
+      .content {
+        color: white;
+        position: absolute;
+        margin-left: 20px;
+
+        .bet {
+          display: flex;
+          color: white;
+        }
+      }
     }
 }

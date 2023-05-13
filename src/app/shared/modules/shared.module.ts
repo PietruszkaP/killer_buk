@@ -8,7 +8,8 @@ import { DropDownMenuComponent } from "../components/drop-down-menu/drop-down-me
 import { InputComponent } from "../components/input/input.component";
 import { SliderComponent } from "../components/slider/slider-component";
 import { ClickOutsideDirective } from "../directives/click-outside.directive";
-
+import {EnglishPremierLeagueComponent} from "../components/english-premier-league/english-premier-league.component";
+import {CdkTableModule} from '@angular/cdk/table';
 
 @NgModule({
     declarations: [
@@ -17,25 +18,30 @@ import { ClickOutsideDirective } from "../directives/click-outside.directive";
         InputComponent,
         BetSlipComponent,
         DropDownMenuComponent,
-        ClickOutsideDirective
+        ClickOutsideDirective,
+      EnglishPremierLeagueComponent
     ],
     imports: [
         BrowserModule,
         FormsModule,
         TranslateModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+      CdkTableModule
+
     ],
     exports: [
         BrowserModule,
         FormsModule,
         ReactiveFormsModule,
+      CdkTableModule,
         ButtonComponent,
         SliderComponent,
         InputComponent,
         BetSlipComponent,
         TranslateModule,
         DropDownMenuComponent,
-        ClickOutsideDirective
+        ClickOutsideDirective,
+      EnglishPremierLeagueComponent
     ]
 })
 export class SharedModule {}

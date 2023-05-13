@@ -2,4 +2,11 @@
     <span class="material-symbols-outlined" (click)="toggleBetSlip()">
         {{ !isBetSlipExpanded ? 'arrow_left' : 'arrow_right' }}
         </span>
+  <div class="content" *ngIf="isBetSlipExpanded">
+    <span>{{'Bet Slip' | translate}}</span>
+    <div *ngFor="let bet of betSlip" class="bet">
+      <span>{{bet.game.homeTeam}} - {{bet.game.awayTeam}}</span>
+      <span>{{bet.odd}}</span>
+    </div>
+  </div>
 </div>
